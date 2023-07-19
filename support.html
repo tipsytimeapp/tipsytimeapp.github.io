@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/index.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="icon" href="static/resources/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>TipsyTime</title>
+
+    <style>
+
+          .navbar-title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        color: white;
+    }
+
+
+      @media (max-width: 767px) {
+          .navbar-text {
+              display: none;
+          }
+      }
+
+          .navbar-text {
+        font-size: 12px;
+        font-weight: normal;
+        text-transform: none;
+        color: white;
+        margin-top: 3px;
+        line-height: 1;
+        padding-left: 4px;
+    }
+    </style>
+</head>
+
+<header class="header">
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-title" style="padding-top:5px;">
+                <img src="static/resources/tipsy-time-character-gray.png" alt="SeaReal Logo" height="22" s> Tipsy Time
+            </div>
+            <div class="navbar-text" style="color:white;">A Fun Drinking game for iOS/MacOS</div>
+        </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav navbar-right">
+	            <li><a style="color:white;" href="./">Home</a></li>
+              <li><a style="color:white;" href="/support">Support</a></li>
+	        </ul>
+	    </div>
+    </div>
+  </nav>
+</header>
+
+	    <div class="privatePolicyDiv2" style="padding-left: 30px; padding-right: 30px;">
+        <br>
+        <h1 style="color: #5e9ca0; text-align: center; padding-bottom: 15px;">FAQ</h1>
+        <ol type="1">
+            <li>
+                Q: "Why does this app's color correction work better from some photos/videos than others?"
+                <br> A: This app works best with smaller clips of unedited <b>underwater</b> footage that were taken at a consistent depth & exposure. For longer videos, or videos in which the underwater depth or camera exposure were changing throughout the filming of the video, this app won't work as well (even with the 'Adaptive Mode' option). Additionally, for photos/videos taken above water, or for underwater footage that has already been edited, the results might look strange.
+            </li>
+            <br>
+            <li>
+                Q: "Why can't I find my color corrected photos & videos in my photo library, or why do some photos/videos show up further back in my library?"
+                <br> A: Currently, this app preserves any metadata associated with a photo/video. Not all photos/videos have metadata, but if you color correct one that has metadata that contains a creation date, then that date will be carried over to your newly corrected photo/video (and would therefore show up in your library by its date). Note, however, that all newly color corrected photos and videos will also be added to a 'SeaReal' album in your photo library.
+            </li>
+            <br>
+            <li>
+                Q: "What is 'Adaptive Mode'?"
+                <br> A: When 'Adaptive' mode is on, the color correction logic for a given frame is determined by the most recent frames that came before it. Generally speaking, this option might be better for videos that a) Are longer in duration, b) Contain transitions (e.g. fade in from black), or c) Contain clips from different dives. When 'Adaptive' mode is off, the color correction logic for a given frame is determined by the first few frames of the video. Generally speaking, this option might be better for videos that a) Are shorter in duration, and b) Have colors, light exposure, and depth (at which the footage was taken) that are mostly consistent throughout its duration.
+            </li>
+            <br>
+            <li>
+                Q: "Why are my color corrected photos & videos sometimes smaller or larger in file size than the original photo/video they came from?"
+                <br> A: This app uses the highest quality settings that Apple seems to allow for exporting photos and videos, resulting in variations in file size. For example, HEVC-encoded videos exported with our app may have a smaller file size due to the preset's efficient compression algorithm. Also, color correction can sometimes increase the amount of visual information and result in larger file sizes. The resulting file size depends on factors like resolution and compression settings, and it's not always possible to achieve the same file size as the input file. Ultimately, we strive to maintain the highest quality while optimizing the file size based on the available settings.
+            </li>
+            <br>
+            <li>
+                Q: "Why doesn't this app support more output file types for my color corrected photos & videos?"
+                <br> A: There are a lot of image file formats that exist, and it's time consuming to invest the development time and ongoing testing needed in order to support more than just the most popular formats. That said, we're open to adding additional support in the future if we see interest from SeaReal users!
+            </li>
+            <br>
+            <li>
+                Q: "When trying to save a color corrected video to my library, why has the progress bar stopped moving?"
+                <br> A: This is a rare bug that we don't see often. For now, you might need to close the app and restart your iPhone if this happens, but it would also be helpful to contact us via email (listed below) to let us know if you've ever encountered this error.
+            </li>
+        </ol>
+        <br>
+        <p>To report an issue, contact <a class="link" href="mailto:tipsytimeapp@gmail.com">tipsytimeapp@gmail.com</a>, and we will do our best to reply.</p>
+        <p>&nbsp;</p>
+    </div>
+</div>
+
+    <footer class="footer2" style="padding-left: 50px; padding-right: 50px; position: relative;">
+        <p>2023 Silly Squad Games. All rights reserved.</p>
+        <ul>
+            <li><a href="/private-policy">Private Policy</a></li>
+        </ul>
+    </footer>
+
+<script src="index.js"></script>
+
+</html>
